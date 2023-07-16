@@ -307,6 +307,7 @@ body {
 }
 
 .project-label{
+    padding-top: 32px;
     color: var(--navyblue, #2E2F42);
     font-size: 20px;
     font-weight: 500;
