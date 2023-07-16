@@ -8,10 +8,73 @@
    --whitecolor: #FFF;
    --slatecolor: #434455;
    --cloudcolor: #F4F4FD;
-   
+   --cornflower: #E7E9FC;
+}
+
+/* CSS Reset */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin:0;
+}
+ul,
+ol{
+   margin:0;
+   padding:0; 
+}
+
+img{
+    display: block;
+}
+/* End of CSS Reset */
+
+.container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header{
+    padding-top: 24px;
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white, #FFF);
+}
+
+.header-container{
+    display: flex;
+    align-items:center;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.header-list{
+    display: flex;
+    gap: 30px;
+}
+
+.header-contact-info{
+    margin-left: auto;
+    display: flex;
+    padding-bottom: 24px;
+    gap: 40px;
+}
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .link-logo{
+    margin-right: 130px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 1.5px;
@@ -67,6 +130,11 @@ body {
 
 .hero{
     background-color: var(--navyblue);
+
+}
+
+.hero-container{
+    text-align: center;
 }
 
 .hero-title {
@@ -83,7 +151,7 @@ body {
 }
 
 .btn-primary{
-    display: inline-flex;
+    margin-top: 48px;
     padding: 16px 32px;
     gap: 10px;
     border: none;
@@ -102,6 +170,19 @@ body {
     background-color: var(--oceancolor);
 }
 
+.what-we-do-container{
+    margin-top: 120px;
+}
+.section-white{
+    background-color: #FFF;
+}
+
+.strategy-lists{
+    display: flex;
+    align-items: center;
+    gap: 24px
+}
+
 .title-list{
     font-size: 20px;
     font-weight: 500;
@@ -110,17 +191,42 @@ body {
 }
 
 .section-title {
+    text-align: center;
+    gap: 72px;
     color: var(--slatecolor);
     font-size: 36px;
     font-weight: 900;
     line-height: 1.5;
 }
 
+.what-we-do-title{
+    margin-bottom: 72px;
+}
+
+.services-list{
+    display: flex;
+    gap: 24px
+   }
+
 .section-gray {
-    background-color: var(--cloudcolor)
+    background-color: var(--cloudcolor);
+}
+
+.team-cards{
+    display: flex;
+    gap: 24px;
+}
+
+.card-body{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
+    text-align: center;
     color: var(--navyblue, #2E2F42);
     font-family: Roboto;
     font-size: 20px;
@@ -129,6 +235,7 @@ body {
 }
 
 .team-position {
+    text-align: center;
     color: var(--slate, #434455);
     font-size: 16px;
     font-style: normal;
@@ -137,7 +244,21 @@ body {
     letter-spacing: 0.05em;
 }
 
+.footer-logo{
+    padding-top: 100px;
+    margin-right: 1169px;
+    margin-left: 156px;
+}
+
+.footer-text{
+    padding-top: 16px;
+    margin-right: 1020px;
+    margin-left: 156px;
+    margin-bottom: 100px;
+}
+
 .logo-footer {
+    padding-bottom: 16px;
     font-style: normal;
     font-size: 18px;
     font-weight: 800;
@@ -147,7 +268,9 @@ body {
 }
 
 .footerbg {
-    background-color: var(--navyblue)
+    height: 312px;
+    flex-shrink: 0;
+    background-color: var(--navyblue);
 }
 
 .lastword {
@@ -179,6 +302,10 @@ body {
     border-color: #404BBF;
 }
 
+.filters-projects-section{
+    background: #FFF ;
+}
+
 .project-label{
     color: var(--navyblue, #2E2F42);
     font-size: 20px;
@@ -188,4 +315,28 @@ body {
 
 .project-desc{
     color: var(--slatecolor);
+}
+
+
+.filters-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 72px;
+    gap:24px
+    }
+
+.projects-card-body{
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
 }
